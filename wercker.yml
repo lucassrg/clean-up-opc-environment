@@ -10,11 +10,6 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
     steps:
     - script:
-      name: echo
-      cwd: /oracle-cloud/
-      code: echo "hello world!"
-
-    - script:
       name: opccli version
       cwd: /oracle-cloud/
       code: opc --version
