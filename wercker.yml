@@ -12,23 +12,19 @@ build:
     - script:
       name: echo
       cwd: /oracle-cloud/
-      code: |
-          echo "hello world!"
+      code: echo "hello world!"
 
     - script:
       name: opccli version
       cwd: /oracle-cloud/
-      code: |
-          opc --version
+      code: opc --version
 
     - script:
       name: bmcscli version
       cwd: /oracle-cloud/
-      code: |
-          bmcs --version
+      code: bmcs --version
 
     - script:
       name: fmtcli version
       cwd: /oracle-cloud/
-      code: |
-          java -jar /oracle-cloud-tools/ftmcli.jar -v
+      code: java -jar /oracle-cloud-tools/ftmcli.jar -v
