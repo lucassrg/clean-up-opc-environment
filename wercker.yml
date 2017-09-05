@@ -4,23 +4,12 @@ build:
       username: $DOCKER_USERNAME
       password: $DOCKER_PASSWORD
       tag: 2017.08
-      entrypoint: /oracle-cloud/opc --version
 
     # Steps make up the actions in your pipeline
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
     steps:
     - script:
-      name: opccli version
+      name: hello world
       cwd: /oracle-cloud/
-      code: opc --version
-
-    - script:
-      name: bmcscli version
-      cwd: /oracle-cloud/
-      code: bmcs --version
-
-    - script:
-      name: fmtcli version
-      cwd: /oracle-cloud/
-      code: java -jar /oracle-cloud-tools/ftmcli.jar -v
+      code: echo "hello world"
