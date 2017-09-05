@@ -4,6 +4,7 @@ build:
       username: $DOCKER_USERNAME
       password: $DOCKER_PASSWORD
       tag: 2017.08
+      entrypoint: /bin/bash -c
 
     # Steps make up the actions in your pipeline
     # Read more about steps on our dev center:
